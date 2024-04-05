@@ -55,7 +55,9 @@ public class Main {
         System.out.println();
         System.out.println("Другие размеры:");
         for (Map.Entry<Integer, Integer> kv : sizeToFreq.entrySet()) {
-            System.out.println("- " + kv.getKey() + " (" + kv.getValue() + " раз)");
+            if (kv != maxEntry) {
+                System.out.println("- " + kv.getKey() + " (" + kv.getValue() + " раз)");
+            }
         }
     }
 
