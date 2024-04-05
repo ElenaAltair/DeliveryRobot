@@ -43,7 +43,7 @@ public class Main {
             }).start();
         }
 
-ge
+
         System.out.print("Самое частое количество повторений ");
         Map.Entry<Integer, Integer> maxEntry = sizeToFreq.entrySet().stream()
                 .max(Comparator.comparing(Map.Entry::getValue))
